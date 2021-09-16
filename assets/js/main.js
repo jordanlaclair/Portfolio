@@ -68,6 +68,7 @@ sr.reveal(".work2", { interval: 200 });
 sr.reveal(".work3", { interval: 200 });
 sr.reveal(".work4", { interval: 200 });
 sr.reveal(".work5", { interval: 200 });
+sr.reveal(".work6", { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal(".contact__input", { interval: 200 });
