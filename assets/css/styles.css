@@ -72,7 +72,6 @@ img {
 	display: block;
 }
 
-/*===== CLASS CSS ===== */
 .section-title {
 	position: relative;
 	font-size: var(--h2-font-size);
@@ -122,8 +121,19 @@ img {
 .bd-grid {
 	max-width: 1024px;
 	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
+.bd-grid1 {
+	max-width: 1024px;
+	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 	grid-column-gap: 2rem;
+
 	width: calc(100% - 2rem);
 	margin-left: var(--mb-2);
 	margin-right: var(--mb-2);
@@ -423,11 +433,18 @@ img {
 	row-gap: 2rem;
 }
 
+#work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .work1__img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
@@ -464,11 +481,10 @@ img {
 }
 
 .work1__link {
-	width: 100%;
+	width: 80%;
 }
 
-.work1__link img {
-	padding: 15px;
+.work1__img .work1__link img {
 	transition: 1s;
 	height: auto;
 	max-width: 100%;
