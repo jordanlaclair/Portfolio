@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-🟢 [Live Link](https://jordans-portfolio-15c5b.web.app/) 🟢
+🟢 [Live Link](https://jordanmolinas-portfolio.netlify.app/) 🟢
 
 ## General Overview
 
