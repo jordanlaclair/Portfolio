@@ -456,24 +456,30 @@ img {
 }
 
 .work1__img:hover {
-  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.work__title {
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .work1__img:hover .work__title {
-  display: block;
+  opacity: 1;
+  height: 110px;
   margin-top: 35px;
 }
 
 .work__title {
-  display: none;
+  height: 0;
   font-weight: bold;
-  animation: fadeIn 2.5s;
   text-align: center;
 }
 .work__description {
   font-weight: normal;
   font-size: 0.9rem;
-  margin: 10px 15px 20px 15px;
+  padding: 15px;
 }
 
 .transition {
@@ -482,12 +488,16 @@ img {
 
 .work1__link {
   width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .work1__img .work1__link img {
   transition: 1s;
   height: auto;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .work1__img .work1__link img:hover {
@@ -547,20 +557,9 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 1080px) {
-  .work1__img .work1__link img:hover {
-  }
-  .work1__img .work__title {
-    display: block;
-    margin-top: 35px;
-  }
-  .work1__img {
-    height: auto;
-  }
-  .work__title {
-    font-weight: bold;
-    animation: fadeIn 2.5s;
-    text-align: center;
+@media screen and (max-width: 980px) {
+  .work1__img:hover .work__title {
+    height: 140px;
   }
 }
 @media screen and (min-width: 520px) and (max-width: 765px) {
@@ -582,14 +581,10 @@ img {
   .skills__icon3 {
     margin-right: 4rem;
   }
-  .skills__icon4 {
-  }
 }
 @media screen and (min-width: 300px) and (max-width: 380px) {
   .skills__icon3 {
     margin-right: 3rem;
-  }
-  .skills__icon4 {
   }
 }
 @media screen and (min-width: 404px) and (max-width: 560px) {
